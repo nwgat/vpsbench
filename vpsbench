@@ -24,9 +24,9 @@ function bench_quick {
     local io=$( ( dd if=/dev/zero of=$test_file bs=64k count=16k conv=fdatasync && rm -f $test_file ) 2>&1 | awk -F, '{io=$NF} END { print io}' )
     echo OK
 
-    echo -n "Benching CPU. Bzipping 25MB file ... "
-    dd if=/dev/urandom of=$tar_file bs=1024 count=25000 >>/dev/null 2>&1
-    local tf=$( (/usr/bin/time -f "%es" tar cfj $tar_file.bz2 $tar_file) 2>&1 )
+    echo -n "Benching CPU. gzipping 50MB file ... "
+    dd if=/dev/urandom of=$tar_file bs=1M count=50 >>/dev/null 2>&1
+    local tf=$( (/usr/bin/time -f "%es" pigz -9 -q $tar_file) 2>&1 )
     rm -f tarfile*
     echo OK
 
