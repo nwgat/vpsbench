@@ -1,6 +1,7 @@
-# vpsbench
-"pigz" for multithreaded gzip
-"4k" for better SSD compatibility and performance 
+# vpsbench2
+
+* "pigz" for multithreaded gzip
+* "4k" for better SSD compatibility and performance 
 
 Benchmark VPS performance. See original authers [user submissions](https://github.com/mgutz/vpsbench/wiki/VPS-Hosts)
 
