@@ -33,7 +33,7 @@ Debian pre-requisites
 Example
 
 
-    $ bash <(wget --no-check-certificate -O - https://raw.github.com/CoreVPS/vpsbench/master/vpsbench)
+    $ bash <(wget --no-check-certificate -O - https://github.com/nwgat/vpsbench/master/vpsbench)
 
     CPU model:  Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
     Number of cores: 4
