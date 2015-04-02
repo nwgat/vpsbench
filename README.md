@@ -1,17 +1,18 @@
 # vpsbench
-
-Modified to use "pigz" for multithreaded gzip, to take use of multiple cpus.
+"pigz" for multithreaded gzip
+"4k" for better SSD compatibility and performance 
 
 Benchmark VPS performance. See original authers [user submissions](https://github.com/mgutz/vpsbench/wiki/VPS-Hosts)
 
 A script to run simple and comprehensive benchmarks on CPU and IO performance.
-
 
 Tested on:
 
 * Debian 6.0.6
 * Ubuntu 12.04 LTS
 
+## known issues
+/usr/bin/time is not found on Ubuntu 14.04
 
 ## Usage
 
